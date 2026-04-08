@@ -14,7 +14,6 @@
         .yellow-gradient { background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%); }
         .btn-hover { transition: all 0.3s ease; }
         .btn-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -10px rgba(234, 179, 8, 0.5); }
-        /* Control de Idioma inicial en Inglés */
         .lang-es { display: none; }
     </style>
 </head>
@@ -55,11 +54,9 @@
                     <span class="lang-en">Order Now</span><span class="lang-es">Ordenar Ahora</span>
                 </a>
             </div>
-            <div class="flex-1">
-                <div class="relative w-full aspect-square max-w-md mx-auto">
-                    <div class="absolute inset-0 bg-yellow-400 rounded-[3rem] rotate-6 opacity-20"></div>
-                    <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=1000&auto=format&fit=crop" class="relative z-10 w-full h-full object-cover rounded-[3rem] shadow-2xl border-8 border-white" alt="Empanadas">
-                </div>
+            <div class="flex-1 relative">
+                <div class="absolute inset-0 bg-yellow-400 rounded-[3rem] rotate-6 opacity-20"></div>
+                <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=1000&auto=format&fit=crop" class="relative z-10 w-full h-full object-cover rounded-[3rem] shadow-2xl border-8 border-white" alt="Empanadas">
             </div>
         </div>
     </section>
@@ -68,7 +65,7 @@
         
         <div>
             <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl font-extrabold tracking-tight">
+                <h2 class="text-3xl font-extrabold tracking-tight text-stone-900">
                     <span class="lang-en">Fried Line</span><span class="lang-es">Línea Frita</span>
                 </h2>
                 <div class="h-1 flex-1 bg-yellow-200 rounded-full"></div>
@@ -77,14 +74,14 @@
                 <div class="bg-white p-6 rounded-[2rem] border border-stone-100 shadow-sm flex items-center gap-6 hover:border-yellow-400 transition-all">
                     <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQ6xnuW2PpOK2PyRwjhwaBgW0lgBmXP6HQ_I2YwTpEi6E4Z02ziqWxPW7W-R8zpcHhZdow03kCVp0UEnjCNT4ZhES3UKb_fPekm_pEVsbQBNHLF7aVW8MIYTw2KaSbNz09aFgt_bv_u6Pwf8Ln9C0CCygVgFmBqhuOIdviE2cAuM1UPmEu8-XRxlGsFAWER1wi78HK6p1LrY57ZWOai7b_oS5PCIWA4R4Qha3w=w1280" class="w-24 h-24 rounded-full object-cover border-4 border-yellow-100 shrink-0">
                     <div>
-                        <h3 class="font-bold text-xl uppercase italic">Fried Empanada (x10)</h3>
+                        <h3 class="font-bold text-xl uppercase italic leading-tight">Fried Empanada (x10)</h3>
                         <p class="text-2xl font-black text-yellow-600">$20.00</p>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-[2rem] border border-stone-100 shadow-sm flex items-center gap-6 hover:border-yellow-400 transition-all">
                     <img src="https://images.unsplash.com/photo-1613919113166-702316e257a0?q=80&w=200&auto=format&fit=crop" class="w-24 h-24 rounded-full object-cover border-4 border-yellow-100 shrink-0">
                     <div>
-                        <h3 class="font-bold text-xl uppercase italic">Cocktail Fried (x20)</h3>
+                        <h3 class="font-bold text-xl uppercase italic leading-tight">Cocktail Fried (x20)</h3>
                         <p class="text-2xl font-black text-yellow-600">$30.00</p>
                     </div>
                 </div>
@@ -100,50 +97,69 @@
             </div>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-stone-100/50 p-6 rounded-[2rem] border border-dashed border-stone-300 flex items-center gap-6">
-                    <div class="w-24 h-24 rounded-full bg-stone-200 shrink-0 flex items-center justify-center text-stone-400 font-bold">10x</div>
+                    <div class="w-24 h-24 rounded-full bg-stone-200 shrink-0 flex items-center justify-center text-stone-400 font-bold italic">10x</div>
                     <div>
-                        <h3 class="font-bold text-xl">FROZEN EMPANADA</h3>
+                        <h3 class="font-bold text-xl uppercase leading-tight">Frozen Empanada</h3>
                         <p class="text-2xl font-black text-stone-500">$18.00</p>
                     </div>
                 </div>
                 <div class="bg-stone-100/50 p-6 rounded-[2rem] border border-dashed border-stone-300 flex items-center gap-6">
-                    <div class="w-24 h-24 rounded-full bg-stone-200 shrink-0 flex items-center justify-center text-stone-400 font-bold">50x</div>
+                    <div class="w-24 h-24 rounded-full bg-stone-200 shrink-0 flex items-center justify-center text-stone-400 font-bold italic">50x</div>
                     <div>
-                        <h3 class="font-bold text-xl">FROZEN COCKTAIL</h3>
+                        <h3 class="font-bold text-xl uppercase leading-tight">Frozen Cocktail</h3>
                         <p class="text-2xl font-black text-stone-500">$50.00</p>
                     </div>
                 </div>
             </div>
         </div>
+
         <div>
-    <div class="flex items-center gap-4 mb-12">
-        <h2 class="text-3xl font-extrabold tracking-tight">
-            <span class="lang-en">Flavor Line</span><span class="lang-es">Línea de Sabor</span>
-        </h2>
-        <div class="h-1 flex-1 bg-yellow-200 rounded-full"></div>
-    </div>
-    
-    <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-[2rem] border border-stone-100 shadow-sm flex items-center gap-6 hover:border-yellow-400 transition-all group">
-            <div class="relative shrink-0">
-                <div class="absolute inset-0 bg-red-100 rounded-full scale-110 group-hover:bg-red-200 transition-colors"></div>
-                <img src="https://images.unsplash.com/photo-1590779033100-9f60705a413b?q=80&w=200&auto=format&fit=crop" 
-                     class="relative z-10 w-24 h-24 rounded-full object-cover border-4 border-white shadow-md" alt="Chili">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-extrabold tracking-tight">
+                    <span class="lang-en">Flavor Line</span><span class="lang-es">Línea de Sabor</span>
+                </h2>
+                <div class="h-1 flex-1 bg-yellow-200 rounded-full"></div>
             </div>
-            <div class="flex-1">
-                <h3 class="font-bold text-xl uppercase italic leading-tight">
-                    <span class="lang-en">Jar of Colombian Chili</span>
-                    <span class="lang-es">Frasco de Ají Colombiano</span>
-                </h3>
-                <div class="flex justify-between items-end mt-2">
-                    <p class="text-2xl font-black text-stone-900">$7.00</p>
-                    <a href="https://wa.me/14073357714" class="bg-yellow-500 p-2 rounded-full hover:bg-yellow-600 transition-all shadow-lg shadow-yellow-500/20">
-                        <i data-lucide="shopping-cart" class="w-5 h-5 text-stone-900"></i>
-                    </a>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-[2rem] border border-stone-100 shadow-sm flex items-center gap-6 hover:border-yellow-400 transition-all group">
+                    <div class="relative shrink-0">
+                        <div class="absolute inset-0 bg-red-100 rounded-full scale-110 group-hover:bg-red-200 transition-colors"></div>
+                        <img src="https://images.unsplash.com/photo-1590779033100-9f60705a413b?q=80&w=200&auto=format&fit=crop" class="relative z-10 w-24 h-24 rounded-full object-cover border-4 border-white shadow-md">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-xl uppercase italic leading-tight">
+                            <span class="lang-en">Jar of Colombian Chili</span><span class="lang-es">Frasco de Ají Colombiano</span>
+                        </h3>
+                        <div class="flex justify-between items-end mt-2">
+                            <p class="text-2xl font-black text-stone-900">$7.00</p>
+                            <a href="https://wa.me/14073357714" class="bg-yellow-500 p-2 rounded-full hover:bg-yellow-600 transition-all shadow-lg shadow-yellow-500/20">
+                                <i data-lucide="shopping-cart" class="w-5 h-5 text-stone-900"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-[2rem] border border-stone-100 shadow-sm flex items-center gap-6 hover:border-yellow-400 transition-all group">
+                    <div class="relative shrink-0">
+                        <div class="absolute inset-0 bg-yellow-100 rounded-full scale-110 group-hover:bg-yellow-200 transition-colors"></div>
+                        <img src="https://images.unsplash.com/photo-1470509037663-253afd7f0f51?q=80&w=200&auto=format&fit=crop" class="relative z-10 w-24 h-24 rounded-full object-cover border-4 border-white shadow-md">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-xl uppercase italic leading-tight">
+                            <span class="lang-en">Jar of House Sauce</span><span class="lang-es">Frasco de Salsa de la Casa</span>
+                        </h3>
+                        <div class="flex justify-between items-end mt-2">
+                            <p class="text-2xl font-black text-stone-900">$5.00</p>
+                            <a href="https://wa.me/14073357714" class="bg-yellow-500 p-2 rounded-full hover:bg-yellow-600 transition-all shadow-lg shadow-yellow-500/20">
+                                <i data-lucide="shopping-cart" class="w-5 h-5 text-stone-900"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <section class="py-24 px-4 bg-white">
+    </section>
+
+    <section class="py-24 px-4 bg-white border-y border-stone-100">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
             <div class="flex-1 space-y-6">
                 <h2 class="text-4xl font-extrabold text-stone-900">
@@ -155,41 +171,17 @@
                     <span class="lang-es">Nuestra salsa de ají está hecha con ingredientes 100% naturales y frescos. Cada salsa es elaborada a mano con cuidado y amor para darle a tus empanadas ese toque único que nos distingue.</span>
                 </p>
             </div>
-            <div class="flex-1 w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-yellow-400">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/iXzKwZttLgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="flex-1 w-full aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-yellow-400">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/iXzKwZttLgk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-    </section>
-
-        <div class="bg-white p-6 rounded-[2rem] border border-stone-100 shadow-sm flex items-center gap-6 hover:border-yellow-400 transition-all group">
-            <div class="relative shrink-0">
-                <div class="absolute inset-0 bg-yellow-100 rounded-full scale-110 group-hover:bg-yellow-200 transition-colors"></div>
-                <img src="https://images.unsplash.com/photo-1470509037663-253afd7f0f51?q=80&w=200&auto=format&fit=crop" 
-                     class="relative z-10 w-24 h-24 rounded-full object-cover border-4 border-white shadow-md" alt="Sauce">
-            </div>
-            <div class="flex-1">
-                <h3 class="font-bold text-xl uppercase italic leading-tight">
-                    <span class="lang-en">Jar of House Sauce</span>
-                    <span class="lang-es">Frasco de Salsa de la Casa</span>
-                </h3>
-                <div class="flex justify-between items-end mt-2">
-                    <p class="text-2xl font-black text-stone-900">$5.00</p>
-                    <a href="https://wa.me/14073357714" class="bg-yellow-500 p-2 rounded-full hover:bg-yellow-600 transition-all shadow-lg shadow-yellow-500/20">
-                        <i data-lucide="shopping-cart" class="w-5 h-5 text-stone-900"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
     </section>
 
     <section class="py-24 px-4 bg-yellow-50">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
             <div class="flex-1">
                 <h2 class="text-4xl font-extrabold mb-6 tracking-tight">
-                    <span class="lang-en">Find Us In Orlando</span>
-                    <span class="lang-es">Encuéntranos en Orlando</span>
+                    <span class="lang-en">Find Us In Orlando</span><span class="lang-es">Encuéntranos en Orlando</span>
                 </h2>
                 <div class="space-y-4 text-lg">
                     <p class="flex items-center gap-3 font-semibold"><i data-lucide="map-pin" class="text-yellow-600"></i> Orlando, FL</p>
@@ -209,7 +201,7 @@
     <footer class="bg-stone-900 text-white pt-20 pb-10 px-4">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
             <div class="text-center md:text-left">
-                <span class="text-3xl font-black text-yellow-400 block mb-4">CornEmpa</span>
+                <span class="text-3xl font-black text-yellow-400 block mb-2">CornEmpa</span>
                 <p class="text-stone-400 text-sm italic">"Authentic flavor in every bite"</p>
             </div>
             <div class="flex justify-center gap-6">
@@ -217,7 +209,7 @@
                 <a href="https://lh3.googleusercontent.com/sitesv/APaQ0ST_DF2Zad7GJKRzIfEqPuCHjrf1DfaE5440vKVztWFb4v5Nkt9GeGLUR8xqvSgToETOgkvX4hg-6Xos22b4XEITCUDHhCBBUHlKNecvaIeydrgNvUqPi95MWGsgvUwHc0_sTnoP26aS9YzNIY3rqN5ycmuBuXuL-Axrp6LBer-Yin19hCeE9dMqa7nWtkv5a_5It3xbqGJT24Gx" class="w-14 h-14 bg-white/5 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-stone-900 transition-all"><i data-lucide="facebook"></i></a>
             </div>
             <div class="text-center md:text-right">
-                <p class="text-stone-500 text-xs">© 2026 CornEmpa. All rights reserved.</p>
+                <p class="text-stone-500 text-xs mt-2">© 2026 CornEmpa. All rights reserved.</p>
             </div>
         </div>
     </footer>
