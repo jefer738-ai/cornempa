@@ -241,22 +241,24 @@
         </div>
     </section>
 
-    <footer class="bg-stone-900 text-white pt-20 pb-10 px-4">
+   <footer class="bg-stone-900 text-white pt-20 pb-10 px-4">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 items-center">
             <div class="text-center md:text-left">
                 <span class="text-3xl font-black text-yellow-400 block mb-2">Empanadas CornEmpa</span>
                 <p class="text-stone-400 text-sm italic">"Authentic flavor in every bite"</p>
             </div>
+            
             <div class="flex justify-center gap-6">
-                <a href="https://instagram.com/empanadas_corn_empa" target="_blank" class="w-14 h-14 bg-white/5 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-stone-900 transition-all group">
-                    <i data-lucide="instagram" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
+                <a href="https://instagram.com/empanadas_corn_empa" target="_blank" class="w-14 h-14 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-all overflow-hidden">
+                    <img src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-instagram-icon-logo-png-image_3560504.jpg" alt="Instagram" class="w-8 h-8 object-contain">
                 </a>
-                <a href="https://facebook.com/corn.empa" target="_blank" class="w-14 h-14 bg-white/5 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-stone-900 transition-all group">
-                    <i data-lucide="facebook" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
+                <a href="https://facebook.com/corn.empa" target="_blank" class="w-14 h-14 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-all overflow-hidden">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook" class="w-8 h-8 object-contain">
                 </a>
             </div>
+
             <div class="text-center md:text-right">
-                <p class="text-stone-500 text-xs">© 2026 CornEmpa. All rights reserved. Página desarrollada por Kirev Digital Agency </p>
+                <p class="text-stone-500 text-xs">© 2026 CornEmpa. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -271,20 +273,25 @@
     </div>
 
     <script>
-        // Función principal para inicializar iconos y lenguaje
+        // Inicialización
         function init() {
-            lucide.createIcons();
+            // Intentar cargar iconos de Lucide para el resto de la página
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
             
-            // Forzar visualización correcta al cargar
-            toggleLanguage(true); 
+            // Mantener el estado del lenguaje
+            updateLanguageDisplay();
         }
 
         let currentLang = 'en';
-        function toggleLanguage(keepCurrent = false) {
-            if(!keepCurrent) {
-                currentLang = currentLang === 'en' ? 'es' : 'en';
-            }
-            
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            updateLanguageDisplay();
+        }
+
+        function updateLanguageDisplay() {
             document.querySelectorAll('.lang-en').forEach(el => el.style.display = currentLang === 'en' ? 'inline' : 'none');
             document.querySelectorAll('.lang-es').forEach(el => el.style.display = currentLang === 'es' ? 'inline' : 'none');
             
@@ -292,8 +299,5 @@
             if(label) label.innerText = currentLang === 'en' ? 'ES' : 'EN';
         }
 
-        // Ejecutar al cargar la página
         window.onload = init;
     </script>
-</body>
-</html>
