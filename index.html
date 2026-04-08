@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CornEmpa | Authentic Colombian Empanadas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .hero-gradient { background: radial-gradient(circle at top right, #fff7ed, #fafaf9); }
+        .btn-hover { transition: all 0.3s ease; }
+        .btn-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -10px rgba(234, 88, 12, 0.5); }
+        [lang="es"] { display: none; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass border-b border-orange-100">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="https://lh3.googleusercontent.com/sitesv/APaQ0STbgJfY1LlKK1FrOGmGsMsCxJzNxQAuBpwjWLbG0PzX3-D40ONnY7TM760nm_FmftcvM5mr9ueb7blGLRt9rzke07AMovI3btsAk2jaW3ks2iJzZQsdZ5nNXI3QlO5Tqm0BYv4496LAMBTx6YP_PIqG-m4v-iXVOEHc7D1-6NppXAYQBvVFkaljqYaEApYuUWfJ4hCm4135sBd0SfEYFED9h4kxAOQi3neE=w1280" alt="Logo" class="w-10 h-10 rounded-full border-2 border-orange-500 object-cover">
+                <span class="text-2xl font-extrabold text-amber-950 tracking-tight">CornEmpa</span>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <button onclick="toggleLanguage()" class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-stone-200 text-sm font-bold hover:bg-stone-100 transition-colors">
+                    <i data-lucide="globe" class="w-4 h-4"></i>
+                    <span id="lang-label">ES</span>
+                </button>
+                <a href="https://wa.me/14073357714" class="hidden md:block bg-orange-600 text-white px-6 py-2.5 rounded-full font-bold btn-hover">
+                    <span class="lang-en">Order Now</span>
+                    <span class="lang-es">Ordenar Ahora</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-4 hero-gradient">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-amber-950 leading-[1.1] mb-6">
+                    <span class="lang-en">Authentic Colombian Empanadas in Orlando</span>
+                    <span class="lang-es">Auténticas Empanadas Colombianas en Orlando</span>
+                </h1>
+                <p class="text-lg md:text-xl text-stone-600 mb-8 max-w-lg">
+                    <span class="lang-en">Crispy 100% corn dough. Homemade flavor delivered straight to your door.</span>
+                    <span class="lang-es">Masa de maíz 100% crujiente. Sabor casero entregado directamente en tu puerta.</span>
+                </p>
+                <a href="https://wa.me/14073357714" class="inline-flex items-center gap-3 bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-bold btn-hover shadow-lg shadow-orange-600/20">
+                    <i data-lucide="shopping-cart"></i>
+                    <span class="lang-en">Order Now</span>
+                    <span class="lang-es">Ordenar Ahora</span>
+                </a>
+            </div>
+            <div class="flex-1 relative">
+                <div class="w-full aspect-square max-w-md mx-auto bg-orange-100 rounded-[2rem] rotate-3 absolute -z-10 shadow-inner"></div>
+                <div class="w-full aspect-square max-w-md mx-auto bg-white rounded-[2rem] shadow-2xl flex items-center justify-center overflow-hidden border-8 border-white">
+                    <span class="text-stone-300 font-bold">Empanadas Photo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-amber-900 py-10 text-white text-center px-4">
+        <p class="max-w-3xl mx-auto text-lg font-medium text-amber-100 italic">
+            <span class="lang-en">"All our empanadas are made with crispy 100% corn dough"</span>
+            <span class="lang-es">"Todas nuestras empanadas están hechas con masa de maíz 100% crujiente"</span>
+        </p>
+        <div class="flex flex-wrap justify-center gap-2 mt-6">
+            <span class="px-4 py-1 bg-white/10 rounded-full text-xs font-bold border border-white/20 uppercase tracking-widest">Beef</span>
+            <span class="px-4 py-1 bg-white/10 rounded-full text-xs font-bold border border-white/20 uppercase tracking-widest">Chicken</span>
+            <span class="px-4 py-1 bg-white/10 rounded-full text-xs font-bold border border-white/20 uppercase tracking-widest">Cheese</span>
+            <span class="px-4 py-1 bg-white/10 rounded-full text-xs font-bold border border-white/20 uppercase tracking-widest">Pepperoni</span>
+        </div>
+    </div>
+
+    <section class="py-24 px-4 max-w-6xl mx-auto space-y-24">
+        
+        <div>
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-extrabold tracking-tight">
+                    <span class="lang-en">Fried Line</span>
+                    <span class="lang-es">Línea Frita</span>
+                </h2>
+                <div class="h-1 flex-1 bg-orange-100 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:border-orange-200 transition-all">
+                    <h3 class="text-xl font-bold mb-1">FRIED EMPANADA</h3>
+                    <p class="text-orange-600 font-bold text-sm mb-4">X10 UNITS</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-3xl font-black">$20.00</span>
+                        <a href="https://wa.me/14073357714" class="text-orange-600 font-bold flex items-center gap-1 hover:gap-2 transition-all">Order <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:border-orange-200 transition-all">
+                    <h3 class="text-xl font-bold mb-1">SMALL FRIED (COCKTAIL)</h3>
+                    <p class="text-orange-600 font-bold text-sm mb-4">X20 UNITS</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-3xl font-black">$30.00</span>
+                        <a href="https://wa.me/14073357714" class="text-orange-600 font-bold flex items-center gap-1 hover:gap-2 transition-all">Order <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-extrabold tracking-tight text-stone-400">
+                    <span class="lang-en">Frozen Line</span>
+                    <span class="lang-es">Línea Congelada</span>
+                </h2>
+                <div class="h-1 flex-1 bg-stone-200 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-stone-100/50 p-8 rounded-3xl border border-dashed border-stone-300">
+                    <h3 class="text-xl font-bold mb-1">FROZEN EMPANADA</h3>
+                    <p class="text-stone-500 font-bold text-sm mb-4">X10 UNITS</p>
+                    <p class="text-3xl font-black">$18.00</p>
+                </div>
+                <div class="bg-stone-100/50 p-8 rounded-3xl border border-dashed border-stone-300">
+                    <h3 class="text-xl font-bold mb-1">FROZEN COCKTAIL</h3>
+                    <p class="text-stone-500 font-bold text-sm mb-4">X50 UNITS</p>
+                    <p class="text-3xl font-black">$50.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-extrabold tracking-tight">
+                    <span class="lang-en">Flavor Line</span>
+                    <span class="lang-es">Línea de Sabor</span>
+                </h2>
+                <div class="h-1 flex-1 bg-red-100 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold">COLOMBIAN CHILI</h3>
+                        <p class="text-stone-500 text-sm">100% Natural</p>
+                    </div>
+                    <span class="text-xl font-black text-red-600">$7.00</span>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold">HOUSE SAUCE</h3>
+                        <p class="text-stone-500 text-sm">Handcrafted</p>
+                    </div>
+                    <span class="text-xl font-black text-red-600">$5.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-4 mb-24">
+        <div class="bg-orange-50 border border-orange-200 p-6 rounded-2xl text-center text-orange-800 font-bold">
+            <span class="lang-en">For orders over 100 units (wholesale purchases), contact us.</span>
+            <span class="lang-es">Para pedidos mayores a 100 unidades (compras al por mayor), contáctanos.</span>
+        </div>
+    </div>
+
+    <footer class="bg-amber-950 text-white pt-20 pb-10 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <span class="text-2xl font-black block mb-4">CornEmpa</span>
+                <p class="text-amber-200/60 text-sm">
+                    <span class="lang-en">Order now and enjoy authentic homemade flavor.</span>
+                    <span class="lang-es">Ordena ahora y disfruta del auténtico sabor casero.</span>
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 uppercase tracking-widest text-xs text-amber-500">Contact</h4>
+                <p class="mb-2">Orlando, FL</p>
+                <p class="font-bold text-lg">+1 407 335 7714</p>
+                <p class="text-amber-500 text-sm mt-2">We ship all over Florida</p>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-4">
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-20 pt-8 border-t border-white/10 text-center text-xs text-amber-200/40">
+            © 2026 CornEmpa. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-[100]">
+        <button onclick="window.scrollTo(0,0)" class="w-12 h-12 bg-white text-amber-950 rounded-full shadow-2xl flex items-center justify-center hover:bg-stone-100 transition-all border border-stone-200">
+            <i data-lucide="arrow-up" class="w-6 h-6"></i>
+        </button>
+        <a href="https://wa.me/14073357714" target="_blank" class="w-16 h-16 bg-green-500 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 hover:bg-green-600 transition-all">
+            <i data-lucide="message-circle" class="w-8 h-8 fill-current"></i>
+        </a>
+    </div>
+
+    <script>
+        // Inicializar iconos
+        lucide.createIcons();
+
+        // Lógica de Idioma
+        let currentLang = 'en';
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            
+            // Cambiar visibilidad de textos
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = currentLang === 'en' ? 'inline' : 'none');
+            document.querySelectorAll('.lang-es').forEach(el => el.style.display = currentLang === 'es' ? 'inline' : 'none');
+            
+            // Cambiar etiqueta del botón
+            document.getElementById('lang-label').innerText = currentLang === 'en' ? 'ES' : 'EN';
+        }
+
+        // Ejecutar al cargar
+        toggleLanguage(); // Esto asegura que empiece en inglés pero prepare los spans
+    </script>
+</body>
+</html>
